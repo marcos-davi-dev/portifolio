@@ -1,0 +1,109 @@
+#texto-boas-vindas {
+	font-family: "Josefin Slab";
+	font-size: 3em; /* font-size: 60px e margin-left: 120px */
+	margin-left: 1.5em;
+	width: 16ch; /*Quantidade de caracteres do <p>*/
+	white-space: nowrap;
+	overflow: hidden; /*esconder os caracteres que ainda não apareceram*/
+	animation: typing 4s, blinking 0.5s infinite step-end alternate;
+}
+
+
+.navbar{
+	margin-left: 35px;
+}
+.icones {
+	border-radius: 10px;
+}
+
+
+
+#section-do-texto {
+	margin-left: 10em ;
+	margin-right: 10em;
+	border-radius: 0.2em;
+	background-color: white;
+}
+
+#area-do-texto {
+	font-family: "Space Mono";
+	margin-left: 5em ;
+	margin-right: 5em;
+	text-align: justify;
+}
+.icones-hover:hover{
+	transform:  scale(1.5);
+	transition-duration: 10s;
+	transition-delay: 2s, 1s;
+}
+
+#tecnologias-estudadas {
+	border-color: red;
+	border-width: 30px;
+}
+#texto-boas-vindas-baixo {
+	font-family: "Press Start 2P";
+	font-size: 15px;
+	margin-right: px;
+	border-right: 4px solid;
+	width: 24ch; /*Quantidade de caracteres do <p>*/
+	white-space: nowrap;
+	opacity: 1;
+	overflow: hidden; /*esconder os caracteres que ainda não apareceram*/
+	animation-delay:  2s;
+	animation: typingSegundoTexto 3s steps(24), blinking 0.2s infinite step-end alternate ;
+	
+}
+
+@keyframes typing {
+	from {
+		border-right: 0px solid;
+		width: 0;
+	}
+	to {
+		border-riht:  0px;
+	}
+}
+
+@keyframes typingSegundoTexto {
+	from {
+		width: 0;
+		opacity: 0;
+	}
+
+	to{
+		width: 23ch;
+		opacity: 1;
+	}
+}
+
+@keyframes blinking {
+	50% {
+		border-color: transparent;
+	}
+}
+
+body{
+	background-color: #13;
+	margin: 0;
+	padding: 0;
+}
+
+@media only screen and (max-width: 900px) {
+	#section-do-texto {
+	margin-left: 3em ;
+	margin-right: 3em;
+	border-radius: 0.2em;
+	background-color: skyblue;
+	}
+	#area-do-texto {
+		font-family: "Space Mono";
+		margin-left: 2em ;
+		margin-right: 2em;
+		text-align: justify;
+	}
+
+ 	#lista {
+	float: left;
+}    
+}
